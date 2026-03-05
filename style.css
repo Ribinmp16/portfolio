@@ -1,0 +1,370 @@
+* {
+    font-family: "Pirata One", system-ui;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    margin: 10px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: crimson;
+    font-weight: bolder;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    text-shadow: 6px 8px 10px black;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('./images/image2.jpeg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.info {
+    margin-top: 100px;
+}
+
+.info span {
+    font-size: 40px;
+    color: crimson;
+}
+
+.info h2 {
+    margin: 5px;
+}
+
+pre {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.image img {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    margin-top: 50px;
+    left: 70%;
+    transform: translate(-60%);
+    transition: left 3s ease;
+}
+
+.image .prsn:hover {
+    left: 60%
+}
+
+.h2 {
+    background-color: blue;
+    color: antiquewhite;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25%;
+}
+
+.box {
+    display: inline-block;
+    margin-left: 10%;
+    width: 80%;
+    border: 3px ridge black;
+    align-items: center;
+}
+
+.box img {
+    width: 400px;
+    padding: 40px;
+    padding-left: 65px;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.col {
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    border: 2px inset blueviolet;
+    background: linear-gradient(rgb(57, 235, 220)50%, blueviolet 50%);
+    background-size: 100% 200%;
+    transition: all 1.2s;
+}
+
+.col:hover {
+    background-position: left bottom;
+    box-shadow: 2px 4px 6px 8px rgb(57, 235, 220);
+}
+
+.col img {
+    width: 250px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.col h3 {
+    text-align: center;
+    color: brown;
+}
+
+.col p {
+    text-align: justify;
+    padding: 10px;
+}
+
+form {
+    width: 500px;
+    margin-left: 500px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+.cv {
+    background-color: darkcyan;
+    color: antiquewhite;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(153, 142, 142);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3fdada;
+}
+
+@media screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* header {
+        width: 590px;
+        height: 100px;
+        align-items: center;
+        background-color: rgb(43, 220, 226);
+        color: darkgreen;
+    } */
+    .navbar {
+        width: 590px;
+        height: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(43, 220, 226);
+        color: darkgreen;
+    }
+
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        margin-right: 400px;
+        background-color: rgb(243, 241, 245);
+
+    }
+
+    ul {
+        font-size: smaller;
+        display: flex;
+        justify-content: space-around;
+        margin-left: -400px;
+        padding: 2px;
+        /* margin: 0; */
+    }
+
+    .main {
+        width: 590px;
+        display: flex;
+        height: auto;
+        align-items: normal;
+        background-color: rgb(43, 189, 226);
+        color: darkgreen;
+        padding: 50px;
+    }
+
+    .info {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: normal;
+        background-color: rgb(226, 43, 134);
+        color: darkgreen;
+        margin-left: -150px;
+    }
+
+    .image img {
+        position: absolute;
+        margin-right: -350px;
+        width: 250px;
+        height: 250px;
+        align-items: normal;
+        left: 70%;
+        transform: translate(-60%);
+        transition: left 3s ease;
+
+    }
+
+    .image .prsn:hover {
+        left: 60%
+    }
+
+    /* .prsn {
+        width: 100px;
+
+        height: 100px; */
+
+
+}
+
+#projects {
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    background-color: blueviolet;
+    color: darkgreen;
+}
+
+.box {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    background-color: rgb(43, 189, 226);
+    color: darkgreen;
+}
+
+.box img {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+#services {
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    background-color: rgb(43, 70, 226);
+    color: darkgreen;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+}
+
+.col {
+    width: 300px;
+    height: auto;
+    background-color: darkred;
+    padding: 10px;
+}
+
+#contact {
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    background-color: rgb(226, 214, 43);
+    color: darkgreen;
+}
+
+.input {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+}
+
+form {
+    width: 500px;
+    align-items: center;
+}
+
+#contact h2 {
+    background-color: rgb(240, 48, 48);
+}
+
+#services h2 {
+    background-color: rgb(247, 58, 34);
+}
+
+#projects h2 {
+    background-color: rgb(247, 58, 34);
+}
